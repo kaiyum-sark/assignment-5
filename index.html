@@ -60,8 +60,8 @@
         <p class="text-white font-primary font-semibold text-xl hidden md:block">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
        </section>
     </header>
-    <main class="main mx-3 md:mx-14  mt-12 flex gap-7">
-      <section class="w-9/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mx-auto">
+    <main class="main mx-3 md:mx-14  mt-12 md:flex gap-7 ">
+      <section class="w-9/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mx-auto mb-4 md:mb-6">
         <!-- card-1  -->
         <div class="card bg-white shadow p-4 md:p-8 flex flex-col ">
           <div class="card-logo flex justify-between items-center mb-2 md:mb-4">
@@ -151,10 +151,10 @@
             <i class="fa-regular fa-heart text-2xl text-gray-400 heart"></i>
           </div>
           <div>
-            <h1 class="font-bold text-xl md:text-2xl">জাতীয় জরুরি সেবা</h1>
-            <p>National Emergency</p>
-            <h1 class="font-bold text-2xl md:text-3xl mt-2 md:mt-4 ">999</h1>
-            <div class="bg-gray-200 rounded-full py-2 px-4 w-fit text-gray-500 mb-2 md:mb-4"><p>সার্বজনীন</p></div>
+            <h1 class="font-bold text-xl md:text-2xl">নারী ও শিশু সহায়তা</h1>
+            <p class="text-gray-500">Women & Child Helpline</p>
+            <h1 class="font-bold text-2xl md:text-3xl mt-2 md:mt-4 ">109</h1>
+            <div class="bg-gray-200 rounded-full py-2 px-4 w-fit text-gray-500 mb-2 md:mb-4"><p>সহায়ত</p></div>
           </div>
           <div class="flex gap-2">
             <button class="copy-btn border-2 border-gray-400 rounded-lg w-full py-2.5 hover:bg-gray-200 text-gray-500 hover:text-black" ><i class="fa-regular fa-copy"></i>Copy</button>
@@ -171,10 +171,10 @@
             <i class="fa-regular fa-heart text-2xl text-gray-400 heart"></i>
           </div>
           <div>
-            <h1 class="font-bold text-xl md:text-2xl">জাতীয় জরুরি সেবা</h1>
-            <p>National Emergency</p>
-            <h1 class="font-bold text-2xl md:text-3xl mt-2 md:mt-4 ">999</h1>
-            <div class="bg-gray-200 rounded-full py-2 px-4 w-fit text-gray-500 mb-2 md:mb-4"><p>সার্বজনীন</p></div>
+            <h1 class="font-bold text-xl md:text-2xl">দুদক</h1>
+            <p class="text-gray-500">Anti-Corruption</p>
+            <h1 class="font-bold text-2xl md:text-3xl mt-2 md:mt-4 ">109</h1>
+            <div class="bg-gray-200 rounded-full py-2 px-4 w-fit text-gray-500 mb-2 md:mb-4"><p>সরকারি</p></div>
           </div>
           <div class="flex gap-2">
             <button class="copy-btn border-2 border-gray-400 rounded-lg w-full py-2.5 hover:bg-gray-200 text-gray-500 hover:text-black" ><i class="fa-regular fa-copy"></i>Copy</button>
@@ -184,9 +184,16 @@
         </div>
       </section>
 
-      <aside class="w-3/12">
-        <div>
-          <h1>history</h1>
+      <aside class="mx-6 md:w-3/12 bg-white rounded-lg p-6 mb-6 shadow">
+        <div class="flex justify-around md:justify-between md:flex-col-reverse lg:flex-row gap-2 items-center ">
+         <div class="flex gap-2 items-center">
+          <i class="fa-regular fa-clock"></i>
+          <h1 class="font-bold text-xl">Call History</h1>
+         </div>
+         <button id="clear-btn" class="bg-[#00A63E] text-white py-3 px-8 rounded-full font-bold">Clear</button>
+        </div>
+        <div id="call-history-container">
+
         </div>
       </aside>
     </main>
