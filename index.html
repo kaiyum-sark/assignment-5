@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency hotline services</title>
+    <link rel="stylesheet" href="./style.css" />
     <!-- tailwind & daisyUI Link  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -11,11 +12,51 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Fontawesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <!-- navigation bar  -->
-       
+      <nav class="flex justify-between items-center max-h-[50px] mx-16 my-6">
+        <!-- nav bar left -->
+        <div class="flex items-center gap-4">
+          <img src="./assets/logo.png" alt="" class="h-[50px]" />
+          <h1 class="text-[#006747] font-extrabold text-2xl leading-6 font-primary">Emergency <br />Service</h1>
+        </div>
+        <!-- nav bar right  -->
+        <div class="flex items-center gap-5">
+          <div
+            class="love-react flex justify-center items-center rounded-full w-[125px] h-[52px] gap-2.5 bg-[#41ff6b1a]"
+          >
+            <h2 id="love-count" class="text-lg font-bold">0</h2>
+            <img src="./assets/heart.png" alt="" class="max-h-6" />
+          </div>
+          <div
+            class="coin flex justify-center items-center rounded-full w-[125px] h-[52px] gap-2.5 bg-[#41ff6b1a]"
+          >
+            <h2 id="coin-count" class="font-bold text-lg">100</h2>
+            <img src="./assets/coin.png" alt="" class="max-h-6" />
+          </div>
+          <div
+            class="flex justify-center items-center rounded-full w-[125px] h-[52px] gap-2.5 bg-[#00A63E]"
+          >
+            <h2 class="text-white text-lg font-bold">
+              <span id="copy-count">2</span> Copy
+            </h2>
+          </div>
+        </div>
+      </nav>
+      <!-- banner  -->
+       <section class="h-[240px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+
+       </section>
     </header>
     <main></main>
   </body>
